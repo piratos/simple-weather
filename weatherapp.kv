@@ -9,22 +9,53 @@
     GridLayout:
         cols: 3
         rows: 1
+        GridLayout:
+            cols: 1
+            rows: 3
+            LabelWithBackground:
+                canvas.before:
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+                text: 'min'
+                font_size: '20sp'
+                color: 1,0,0,1
+                id: temp_min
+            LabelWithBackground:
+                canvas.before:
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+                text: 'now'
+                font_size: '20sp'
+                color: 1,0,0,1
+                id: temp_now
+            LabelWithBackground:
+                canvas.before:
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+                text: 'max'
+                font_size: '20sp'
+                color: 1,0,0,1
+                id: temp_max
         LabelWithBackground:
             canvas.before:
                 Rectangle:
                     pos: self.pos
                     size: self.size
-                    # source: "tmp.jpg" Add background pics
-            text: "Loading ..."
+                    # source: "temp.jpg"
+            text: "Humidity"
             color: 1,0,0,1
             font_size: '30sp'
-            id: temp
-            texture: "tmp.jpg"
-        Label:
-            text: "Loading ..."
-            font_size: '25sp'
             id: hum
-        Label:
-            text: "Loading ..."
-            font_size: '25sp'
+        LabelWithBackground:
+            canvas.before:
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+                    # source: "temp.jpg"
+            text: "Wind speed"
+            color: 1,0,0,1
+            font_size: '30sp'
             id: wind
