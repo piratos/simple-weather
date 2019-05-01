@@ -1,3 +1,4 @@
+#_*_coding: utf-8_*_
 import kivy
 kivy.require('1.10.1')
 
@@ -21,7 +22,7 @@ class WeatherScreen(BoxLayout):
 	def reload(self):
 		res = self.conditions()
 		self.ids.wind.text = "Wind: {}".format(res.get("wind"))
-		self.ids.hum.text = "Hum: {}".format(res.get("hum"))
+		self.ids.hum.text = "Humidity: {}".format(res.get("hum"))
 		self.ids.temp_min.text = "Min: {}°C".format(res.get("temp")[0])
 		self.ids.temp_now.text = "Now: {}°C".format(res.get("temp")[1])
 		self.ids.temp_max.text = "Max: {}°C".format(res.get("temp")[2])

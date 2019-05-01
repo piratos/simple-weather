@@ -3,7 +3,7 @@
     Button:
         text: "reload weather"
         id: "weather_reload"
-        font_size: '25sp'
+        font_size: '100sp'
         background_color: (1.0, 0.0, 0.0, 1.0)
         on_press: root.reload()
     GridLayout:
@@ -18,7 +18,7 @@
                         pos: self.pos
                         size: self.size
                 text: 'min'
-                font_size: '20sp'
+                font_size: '75sp'
                 color: 1,0,0,1
                 id: temp_min
             LabelWithBackground:
@@ -27,7 +27,7 @@
                         pos: self.pos
                         size: self.size
                 text: 'now'
-                font_size: '20sp'
+                font_size: '75sp'
                 color: 1,0,0,1
                 id: temp_now
             LabelWithBackground:
@@ -36,7 +36,7 @@
                         pos: self.pos
                         size: self.size
                 text: 'max'
-                font_size: '20sp'
+                font_size: '75sp'
                 color: 1,0,0,1
                 id: temp_max
         LabelWithBackground:
@@ -47,7 +47,7 @@
                     # source: "temp.jpg"
             text: "Humidity"
             color: 1,0,0,1
-            font_size: '30sp'
+            font_size: '75sp'
             id: hum
         LabelWithBackground:
             canvas.before:
@@ -57,5 +57,5 @@
                     # source: "temp.jpg"
             text: "Wind speed"
             color: 1,0,0,1
-            font_size: '30sp'
+            font_size: '75sp'
             id: wind
