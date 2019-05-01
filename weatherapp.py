@@ -11,6 +11,7 @@ import pyowm
 
 # Use your free API key from openweathermap
 API_KEY = "72d1868964a13571511aad0ba972659c"
+CITY    = "Paris,FR"
 owm = pyowm.OWM(API_KEY)
 
 
@@ -29,7 +30,7 @@ class WeatherScreen(BoxLayout):
 
 	def conditions(self):
 		# Change this to your city
-		observation = owm.weather_at_place('Clichy,FR')
+		observation = owm.weather_at_place(CITY)
 		w = observation.get_weather()
 		tmp = w.get_temperature('celsius')
 		wind = "{} miles/h".format(w.get_wind().get('speed'))
