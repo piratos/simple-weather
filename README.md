@@ -15,3 +15,7 @@ You need to tweak two variables inside weatherapp.py
 - CITY: change this to your city in the form 'CityName,Country_CODE'
 
 then run `python weatherapp.py`
+## Screenshots
+Here  is a screenshot on a Raspberry pi 3 display
+
+![Simple weather app on raspberry pi3](screenshot.jpg)
